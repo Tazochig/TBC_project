@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(244, 244, 244);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  padding: 50px 50px;
+}
+
+.upper_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+header {
+  background-color: rgb(0, 173, 238);
+  padding: 50px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.head_left {
+  display: flex;
+  /* gap: 30px; */
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 555px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.head_left > a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 173, 238);
+  background-color: white;
+  height: 50px;
+  max-width: 100px;
+  border-radius: 15%;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.head_left > a:hover,
+.footer_subscribe:hover,
+.Balance_buttons > button:hover {
+  background-color: #3d3d3d;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Header_picture {
+  height: 35px;
+  cursor: pointer;
+  filter: invert(1) brightness(1000%);
+}
+
+.head_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.head_username {
+  font-weight: bold;
+  color: white;
+}
+
+.Balance {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 450px;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Balance_total {
+  text-align: center;
+  color: rgb(104 119 143);
+}
+
+.Balance_amount {
+  text-align: center;
+  font-size: 36px;
+}
+
+.Balance_buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.Balance_buttons > button {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(0, 173, 238);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1 1 120px;
+  font-weight: bold;
+  min-width: 100px;
+  max-width: 200px;
+}
+
+.Transactions {
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  width: 100%;
+}
+
+.Transactions_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.transaction_lil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9d9b9b3b;
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+.transaction_type {
+  display: flex;
+  gap: 5px;
+}
+
+.transaction_amount {
+  text-align: end;
+}
+
+.transaction_amount_number {
+  color: rgb(261, 14, 38);
+  font-weight: bold;
+}
+
+.transaction_amount_number_positive {
+  color: rgb(114, 210, 154);
+  font-weight: bold;
+}
+
+.Transactions_Type_Name {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.Transaction_img {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+
+.bank_balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.bank_balance_div {
+  display: flex;
+  gap: 5px;
+}
+
+.bank_balance_logo {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+}
+
+.lower_balance {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: bold;
+  width: 100%;
+}
+
+footer {
+  background-color: rgb(0, 173, 238);
+  padding: 50px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 135px;
+  /* flex-wrap: wrap; */
+}
+
+.footer_left {
+  width: 100%;
+  max-width: 495px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 325px;
+}
+
+.footer_right {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  justify-content: space-between;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+
+.footer_icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.footer_scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer_subscribe {
+  max-width: 180px;
+  width: 100%;
+  height: 65px;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+  background-color: white;
+  color: rgba(61, 178, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer_text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+}
+
+.footer_input {
+  width: 100%;
+  height: 70px;
+  outline: none;
+  border: none;
+  padding: 20px 20px;
+  background-color: #81cdff;
+  border-bottom: 3px solid white;
+  color: white;
+}
+
+.footer_input::placeholder {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+}
+
+.footer_email {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer_email > div {
+  height: 90px;
+}
+
+.footer_sub {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 285px;
+  color: white;
+}
+
+.footer_left_phone {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.footer_left_phone_icon {
+  height: 35px;
+  width: 35px;
+}
+
+.Phone_number {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_left_head {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer_left_tbc_icon {
+  height: 45px;
+  width: 45px;
+}
+
+.footer_left_head_text {
+  color: white;
+}
+
+:root {
+  --swiper-pagination-bullet-size: 20px;
+  --swiper-pagination-bullet-width: 20px;
+  --swiper-pagination-bullet-height: 20px;
+}
+
+.stars {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 785px) {
+  .footer_right {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 650px) {
+  footer {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.footer_scroll > a {
+  text-decoration: none;
+  color: white;
+}

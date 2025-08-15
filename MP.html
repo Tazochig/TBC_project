@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Spent</title>
+    <link rel="stylesheet" href="MP.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="head_left">
+        <img
+          src="/Images/Tbc-logo-ka_GE.svg.png"
+          alt=""
+          style="filter: invert(1) brightness(1000%)"
+        />
+        <a class="Header_home" href="/index.html">Home</a>
+        <a class="Header_home" href="/About.html">About Us</a>
+        <a class="Header_home" href="/MP.html">Money spent</a>
+      </div>
+      <div class="head_right">
+        <p class="head_username">Tazo</p>
+        <img
+          class="Header_picture"
+          src="./Images/profile-user-account.svg"
+          alt="Profile picture"
+        />
+      </div>
+    </header>
+    <div class="container">
+      <div class="upper_container">
+        <div class="column">
+          <div class="balance">
+            <h3>Balance</h3>
+            <h1>$10,500.00 USD</h1>
+            <p>Available</p>
+          </div>
+          <div class="transfers">
+            <h1>Favourite Transactions</h1>
+            <div class="Fav_transactions">
+              <div class="Fav_transaction_singular">
+                <img src="/Images/Guy.png" alt="" />
+                <p>George Topuria</p>
+              </div>
+              <div class="Fav_transaction_singular">
+                <img src="/Images/doctor.png" alt="" />
+                <p>Nutsa Mariamidze</p>
+              </div>
+              <div class="Fav_transaction_singular">
+                <img src="/Images/man.png" alt="" />
+                <p>David Matkava</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="insights">
+          <div class="Insights_chart">
+            <h2 class="title">Spending Dynamic</h2>
+            <div class="chart-wrap vertical">
+              <div class="grid">
+                <div class="bar" style="--bar-value: 85%" data-name="Jan"></div>
+                <div class="bar" style="--bar-value: 23%" data-name="Feb"></div>
+                <div class="bar" style="--bar-value: 7%" data-name="Mar"></div>
+                <div class="bar" style="--bar-value: 38%" data-name="Apr"></div>
+                <div class="bar" style="--bar-value: 35%" data-name="May"></div>
+                <div class="bar" style="--bar-value: 30%" data-name="Jun"></div>
+                <div class="bar" style="--bar-value: 5%" data-name="Jul"></div>
+                <div class="bar" style="--bar-value: 25%" data-name="Aug"></div>
+                <div class="bar" style="--bar-value: 45%" data-name="Sep"></div>
+                <div class="bar" style="--bar-value: 60%" data-name="Oct"></div>
+                <div class="bar" style="--bar-value: 40%" data-name="Nov"></div>
+                <div class="bar" style="--bar-value: 90%" data-name="Dec"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower_container">
+        <h1>Transactions</h1>
+        <div class="Exchanges">
+          <div class="Exchanges_upper">
+            <p>Name</p>
+            <p>ID</p>
+            <p>Status</p>
+            <p>Amount</p>
+            <p>Date</p>
+          </div>
+          <div class="Exchanges_lower">
+            <div class="Each_exchange">
+              <div class="Each_exchange_Name">
+                <img src="/Images/doctor.png" alt="" />
+                <p>Nutsa Mariamidze</p>
+              </div>
+              <p>23532412</p>
+              <div class="complete">Completed</div>
+              <p>+$412,00</p>
+              <p>20 Jul 25</p>
+            </div>
+          </div>
+          <div class="Exchanges_lower">
+            <div class="Each_exchange">
+              <div class="Each_exchange_Name">
+                <img src="/Images/Guy.png" alt="" />
+                <p>George Giorgadze</p>
+              </div>
+              <p>64523741</p>
+              <div class="complete">Completed</div>
+              <p>-$555,00</p>
+              <p>21 Jul 25</p>
+            </div>
+          </div>
+          <div class="Exchanges_lower">
+            <div class="Each_exchange">
+              <div class="Each_exchange_Name">
+                <img src="/Images/man.png" alt="" />
+                <p>Lasha Bagdavadze</p>
+              </div>
+              <p>87253129</p>
+              <div class="complete">Completed</div>
+              <p>+$250,00</p>
+              <p>24 Jul 25</p>
+            </div>
+          </div>
+          <div class="Exchanges_lower">
+            <div class="Each_exchange">
+              <div class="Each_exchange_Name">
+                <img src="/Images/Bussinesman.png" alt="" />
+                <p>David Bagdoshvili</p>
+              </div>
+              <p>90825249</p>
+              <div class="complete">Completed</div>
+              <p>-$100,00</p>
+              <p>29 Jul 25</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_left">
+        <div class="footer_left_head">
+          <img
+            src="./Images/TBC_Logo.png"
+            alt=""
+            class="footer_left_tbc_icon"
+          />
+          <h1 class="footer_left_head_text">TBC Bank</h1>
+        </div>
+        <p class="footer_left_head_text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+        <div class="footer_icons">
+          <a
+            href="https://www.facebook.com/tbcbank/?locale=ka_GE"
+            target="_blank"
+          >
+            <img src="./Images/Fb.png" alt="Facebook" />
+          </a>
+          <a href="https://x.com/JSCTBC" target="_blank">
+            <img src="./Images/Twitter.png" alt="Twitter" />
+          </a>
+          <a href="https://www.linkedin.com/company/tbc-bank/" target="_blank">
+            <img src="./Images/Linkdin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=qOW8EhlCnys" target="_blank">
+            <img src="./Images/YT.png" alt="YouTube" />
+          </a>
+        </div>
+        <div class="footer_left_phone">
+          <a href="tel:+995322272727" target="_blank">
+            <img
+              src="/Images/Phone.jpg"
+              alt=""
+              class="footer_left_phone_icon"
+            />
+          </a>
+          <p class="larger_paragraph">
+            <a href="tel:+995322272727" target="_blank" class="Phone_number">
+              +995 32 2 27 27 27
+              <!----><!----></a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer_right">
+        <div class="footer_nav">
+          <h1>Navigation</h1>
+          <div class="footer_scroll">
+            <a href="/index.html">Home</a>
+            <a href="/About.html">About Us</a>
+            <a href="/MP.html">Money Spent</a>
+          </div>
+        </div>
+        <div class="footer_sub">
+          <h1>Our Newsletter</h1>
+          <p class="footer_left_head_text">
+            Subscribe Our Newsletter to get New Updates & Sales.
+          </p>
+          <form id="footerForm" class="footer_email">
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="footerEmail"
+                placeholder="Email Address"
+                class="footer_input"
+              />
+            </div>
+            <button class="footer_subscribe">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
